@@ -1,5 +1,7 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Installare Bootstrap e Sass
+Importare Bootstrap nel file main.js
+Creare tre componenti per la struttura: AppHeader.vue, AppMain.vue, AppFooter.vue
+Creare la cartella styles che contenga il file generals.scss per gli stili - da importare nel file App.vue
+Strutturare il template dei componenti utilizzando le classi bootstrap e applicare stile sass dove necessario
+Esportare i componenti nei rispettivi file proprietari ed importarli in App.vue
+Definire la logica dello script dei componenti
