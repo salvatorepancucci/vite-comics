@@ -1,7 +1,6 @@
 <template>
     <div id="app">
       <AppHeader />
-      <Card />
       <AppMain />
       <AppFooter />
     </div>
@@ -17,7 +16,6 @@
     name: 'App',
     components: {
       AppHeader,
-      Card,
       AppMain,
       AppFooter
     }
