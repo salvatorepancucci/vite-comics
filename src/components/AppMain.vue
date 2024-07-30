@@ -63,6 +63,8 @@
     justify-content: center;
     color: white;
     font-size: 0.8rem;
+    position: relative;
+    z-index: 2;
 
     img {
         width: 40px;
