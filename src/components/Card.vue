@@ -1,6 +1,4 @@
 <template>
-  <div class="container">
-    <div class="row">
       <div class="col-md-2 mb-3 d-flex">
         <div class="card h-100">
           <img :src="thumb" class="card-img-top" :alt="series">
@@ -10,8 +8,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </template>
 
 <script>

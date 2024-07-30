@@ -115,7 +115,7 @@ img {
     position: absolute;
     z-index: 1;
     bottom: 60px;
-    right: 200px;
+    right: 60px;
     padding: 2px;
 }
 
