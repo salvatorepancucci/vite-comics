@@ -8,7 +8,6 @@
   
   <script>
   import AppHeader from './components/AppHeader.vue'
-  import Card from './components/Card.vue'
   import AppMain from './components/AppMain.vue'
   import AppFooter from './components/AppFooter.vue'
   

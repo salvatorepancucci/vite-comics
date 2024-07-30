@@ -47,55 +47,47 @@ export default {
 
 <template>
     <main>
-        <div class="jumbotron" style="background-image: url('../assets/jumbotron.jpg');">
-            <div class="container">
-                <h2 class="text-center">Current Series</h2>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <Card
-                    v-for="(comic, index) in comics"
-                    :key="index"
-                    :thumb="comic.thumb"
-                    :price="comic.price"
-                    :series="comic.series"
-                    :type="comic.type"
-                />
-            </div>
-            <div class="text-center mt-3">
-                <button class="btn btn-primary">Load More</button>
-            </div>
-        </div>
+        <div class="jumbotron"></div>
         <div class="container-fluid">
             <div id="dark" class="row">
-                <div class="col-8 text-center p-2 d-flex align-items-center justify-content-center">
-                    <h4>-> Content goes here <-</h4>
+                <div class="col-12">
+                    <h2 class="text-center">Current Series</h2>
+                    <div class="card">
+                        <Card
+                            v-for="(comic, index) in comics"
+                            :key="index"
+                            :thumb="comic.thumb"
+                            :series="comic.series"
+                         />  
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-primary">Load More</button>
+                    </div>
                 </div>
             </div>
-            <div id="primary" class="row">
-                <div class="col-8 text-center p-2 d-flex align-items-center">
-                    <div class="col">
-                        <img src="../assets/buy-comics-digital-comics.png" alt="Digital Comics">
-                        <span>DIGITAL COMICS</span>
-                    </div>
-                    <div class="col">
-                        <img src="../assets/buy-comics-merchandise.png" alt="DC Merchandise">
-                        <span>DC MERCHANDISE</span>
-                    </div>
-                    <div class="col">
-                        <img src="../assets/buy-comics-subscriptions.png" alt="Subscription">
-                        <span>SUBSCRIPTION</span>
-                    </div>
-                    <div class="col">
-                        <img src="../assets/buy-comics-shop-locator.png" alt="Shop Locator">
-                        <span>COMIC SHOP LOCATOR</span>
-                    </div>
-                    <div class="col">
-                        <img src="../assets/buy-dc-power-visa.svg" alt="DC Power Visa">
-                        <span>DC POWER VISA</span>
-                    </div>    
+        </div>
+        <div id="primary" class="row">
+            <div class="col-8 text-center p-2 d-flex align-items-center">
+                <div class="col">
+                    <img src="../assets/buy-comics-digital-comics.png" alt="Digital Comics">
+                    <span>DIGITAL COMICS</span>
                 </div>
+                <div class="col">
+                    <img src="../assets/buy-comics-merchandise.png" alt="DC Merchandise">
+                    <span>DC MERCHANDISE</span>
+                </div>
+                <div class="col">
+                    <img src="../assets/buy-comics-subscriptions.png" alt="Subscription">
+                    <span>SUBSCRIPTION</span>
+                </div>
+                <div class="col">
+                    <img src="../assets/buy-comics-shop-locator.png" alt="Shop Locator">
+                    <span>COMIC SHOP LOCATOR</span>
+                </div>
+                <div class="col">
+                    <img src="../assets/buy-dc-power-visa.svg" alt="DC Power Visa">
+                    <span>DC POWER VISA</span>
+                </div>    
             </div>
         </div>
     </main>
@@ -132,4 +124,13 @@ export default {
         margin-right: 5px;
     }
 }
+
+.jumbotron {
+    background-image: url('../assets/jumbotron.jpg');
+}
+
+.card {
+    background-color: $secondary-color;
+}
+
 </style>

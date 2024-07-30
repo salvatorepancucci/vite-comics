@@ -39,6 +39,10 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: #fff;
+}
+
 .row {
     justify-content: space-between;
 }

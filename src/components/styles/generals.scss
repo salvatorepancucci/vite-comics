@@ -6,3 +6,7 @@ $secondary-color: #343a40;
 $text-light: #ffffff;
 $text-dark: #000000;
 $text-grey: #303030;
+
+body {
+    background-color: $secondary-color;
+}
