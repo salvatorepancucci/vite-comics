@@ -1,11 +1,27 @@
-<script>
-
-</script>
-
 <template>
+    <div id="app">
+      <AppHeader />
+      <AppMain />
+      <AppFooter />
+    </div>
+  </template>
   
-</template>
-
-<style>
-
-</style>
+  <script>
+  import AppHeader from './components/AppHeader.vue'
+  import AppMain from './components/AppMain.vue'
+  import AppFooter from './components/AppFooter.vue'
+  
+  export default {
+    name: 'App',
+    components: {
+      AppHeader,
+      AppMain,
+      AppFooter
+    }
+  }
+  </script>
+  
+  <style lang="scss">
+  @import '/src/components/styles/generals.scss';
+  </style>
+  
