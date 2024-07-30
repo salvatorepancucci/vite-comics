@@ -1,6 +1,7 @@
 <template>
     <div id="app">
       <AppHeader />
+      <Card />
       <AppMain />
       <AppFooter />
     </div>
@@ -8,6 +9,7 @@
   
   <script>
   import AppHeader from './components/AppHeader.vue'
+  import Card from './components/Card.vue'
   import AppMain from './components/AppMain.vue'
   import AppFooter from './components/AppFooter.vue'
   
@@ -15,6 +17,7 @@
     name: 'App',
     components: {
       AppHeader,
+      Card,
       AppMain,
       AppFooter
     }
